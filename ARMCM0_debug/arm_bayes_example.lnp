@@ -1,0 +1,21 @@
+--cpu Cortex-M0
+".\armcm0_debug\arm_bayes_example_f32.o"
+".\armcm0_debug\basicmathfunctions.o"
+".\armcm0_debug\bayesfunctions.o"
+".\armcm0_debug\commontables.o"
+".\armcm0_debug\complexmathfunctions.o"
+".\armcm0_debug\controllerfunctions.o"
+".\armcm0_debug\distancefunctions.o"
+".\armcm0_debug\fastmathfunctions.o"
+".\armcm0_debug\filteringfunctions.o"
+".\armcm0_debug\matrixfunctions.o"
+".\armcm0_debug\svmfunctions.o"
+".\armcm0_debug\statisticsfunctions.o"
+".\armcm0_debug\supportfunctions.o"
+".\armcm0_debug\transformfunctions.o"
+".\armcm0_debug\startup_armcm0.o"
+".\armcm0_debug\system_armcm0.o"
+--strict --scatter ".\RTE\Device\ARMCM0\ARMCM0_ac6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\ARMCM0_debug\arm_bayes_example.map" -o .\ARMCM0_debug\arm_bayes_example.axf
